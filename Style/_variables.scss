@@ -1,0 +1,9 @@
+@import "./mixins";
+
+:root {
+  --desktop: 2192px;
+  --content: 1215px;
+}
+
+$desktop: var(--desktop);
+$content: var(--content);

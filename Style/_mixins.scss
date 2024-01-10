@@ -1,0 +1,15 @@
+@mixin display(
+  $justifyContent: space-between,
+  $alignItem: center,
+  $flexDirection: row,
+  $flexWrap: nowrap
+) {
+  display: flex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+  flex-direction: $flexDirection;
+  flex-wrap: $flexWrap;
+}
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,543 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+main {
+  width: 100%;
+  height: auto;
+  @include display(center, $flexDirection: column);
+}
+header {
+  width: $content;
+  height: 102px;
+  @include display;
+  #ProperFood {
+    width: 423px;
+    height: 89px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+  #Search {
+    width: 137px;
+    height: 28px;
+    position: relative;
+    margin-left: 243px;
+    input {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      border: 0.5px solid #000;
+      background: #fff;
+      padding: 0 10px 0 35px;
+      font-size: 16px;
+      outline: none;
+    }
+    svg {
+      position: absolute;
+      top: 6.83px;
+      left: 13.86px;
+    }
+  }
+  #email {
+    width: 220px;
+    height: 25px;
+    @include display;
+    svg {
+      margin-top: 5px;
+    }
+    a {
+      color: #000;
+      font-size: 16px;
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 237px;
+  background: #f2f6f7;
+  @include display(center, center, column);
+  .footerLogo {
+    width: $content;
+    a {
+      width: 464px;
+      height: 75px;
+    }
+  }
+  .footerNav {
+    margin-top: 51px;
+    width: 969px;
+    height: 45px;
+    @include display();
+    .footerPages {
+      width: 700px;
+      height: 45px;
+      @include display($flexWrap: wrap);
+      a {
+        width: 180px;
+        height: 20px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .footerSocials {
+      width: 204px;
+      height: auto;
+      @include display();
+    }
+  }
+}
+.pagePosition {
+  width: $content;
+  height: 90px;
+  @include display(start, end);
+  opacity: 0.6;
+  svg {
+    margin: 0 35px 3px 35px;
+  }
+  a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+// Home Page
+
+#pageInfo {
+  width: 100%;
+  height: 647px;
+  background: url("../Images/brooke-lark-08bOYnH_r_E-unsplash\ 2.png") left
+      center no-repeat,
+    linear-gradient(
+      180deg,
+      rgba(236, 244, 246, 1) 0%,
+      rgba(231, 239, 241, 1) 100%
+    );
+  background-size: contain;
+  @include display(center, start);
+  padding-top: 27px;
+  .content {
+    width: $content;
+    height: 427px;
+    @include display(space-between, end, column);
+    nav {
+      width: $content;
+      height: auto;
+      @include display(end);
+      .active {
+        border: 1px solid black;
+        padding: 5px 13px;
+      }
+      a {
+        color: #000;
+        font-size: 16px;
+        margin-left: 81px;
+      }
+    }
+    h2 {
+      width: 629px;
+      height: 47px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    #myEmail {
+      width: 629px;
+      height: 65px;
+      @include display(center);
+      input {
+        width: 443px;
+        height: 65px;
+        flex-shrink: 0;
+        border: 1px solid #000;
+        background-color: unset;
+        outline: none;
+        font-size: 20px;
+        padding: 18px 22px;
+      }
+    }
+  }
+}
+
+#HomeContent1 {
+  width: 1261px;
+  height: 329px;
+  @include display();
+  padding-top: 77px;
+  .HelloText {
+    width: 993px;
+    height: auto;
+    @include display($alignItem: start, $flexDirection: column);
+    h1 {
+      color: #ed2c3d;
+      font-family: Black Han Sans;
+      font-size: 62px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+  .HelloImg {
+    width: 236px;
+    height: 329px;
+    border-radius: 30px;
+    background: rgba(205, 174, 154, 0.15);
+    @include display($flexDirection: column);
+    padding: 21px;
+    p {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}
+
+#HomeContent2 {
+  width: 1261px;
+  @include display();
+  padding-top: 98px;
+  .whyLeft {
+    padding-left: 253px;
+    h3 {
+      color: #ed2c3d;
+      font-size: 32px;
+      font-weight: 100;
+      margin-bottom: 70px;
+    }
+    div {
+      @include display();
+      .iconList li {
+        @include display(start);
+        margin-bottom: 30px;
+        list-style: none;
+      }
+      .textList li {
+        list-style: inside;
+        margin-bottom: 60px;
+        margin-top: 22px;
+        margin-left: 30px;
+      }
+    }
+  }
+  .whyRight {
+    width: 257px;
+    h4 {
+      font-size: 32px;
+      font-weight: 100;
+      margin-left: 8px;
+    }
+  }
+}
+
+#HomeContent3 {
+  width: 1261px;
+  @include display(space-between, start);
+  .contentLeft {
+    @include display($flexDirection: column);
+    .infoCart {
+      margin-bottom: 60px;
+      width: 742px;
+      height: auto;
+      h3 {
+        color: #ed2c3d;
+        font-size: 24px;
+        font-weight: 300;
+      }
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      button {
+        width: 118px;
+        height: 28px;
+        cursor: pointer;
+        border: 1px solid #000;
+        background: #fff;
+      }
+    }
+  }
+  .contentRight {
+    @include display(start, end, column);
+    .categories {
+      width: 364px;
+      height: 466px;
+      margin-top: 62px;
+      border-radius: 30px;
+      background: rgba(205, 174, 154, 0.15);
+      @include display(space-around, center, column);
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+      }
+      nav {
+        width: 230px;
+        height: 297px;
+        @include display(space-between, center, column);
+        a {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400;
+          color: #000;
+          text-transform: lowercase;
+        }
+      }
+    }
+    .tags {
+      width: 422px;
+      height: auto;
+      @include display($flexDirection: column);
+      margin-top: 66px;
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 21px;
+      }
+      div {
+        width: 422px;
+        height: 112px;
+        @include display($flexWrap: wrap);
+        a {
+          width: 128px;
+          height: 43px;
+          @include display(center, center);
+          border: 1px solid #000;
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.postsCart {
+  width: 257px;
+  margin-bottom: 15px;
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+  h6 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+// Category Page
+
+#CategoryContent1 {
+  width: 100%;
+  height: 664px;
+  background-image: url("../Images/Category/tamanna-rumee-nswz6tIpgZk-unsplash\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#CategoryContent2 {
+  width: 1070px;
+  height: auto;
+  @include display(start, center, column);
+  padding-bottom: 75px;
+  h1 {
+    color: #ed2c3d;
+    font-family: "Black Han Sans";
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 33px;
+  }
+  .categorys {
+    width: 100%;
+    @include display($flexWrap: wrap);
+    .categoryCart {
+      width: 470px;
+      height: 454px;
+      img {
+        width: 470px;
+        height: 318px;
+        border-radius: 50px;
+      }
+      h3 {
+        width: 470px;
+        height: auto;
+        margin-top: 20px;
+        text-align: center;
+        color: #ed2c3d;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+#ContactContent1 {
+  width: 100%;
+  height: 450px;
+  @include display(center);
+  padding-top: 42px;
+  div {
+    width: 604px;
+    height: 420px;
+    flex-shrink: 0;
+    background: #ed2c3d;
+    @include display(center, center, column);
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-family: Architects Daughter;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    form {
+      width: 245px;
+      height: auto;
+      @include display(space-between, center, column);
+      input,
+      textarea {
+        width: 100%;
+        height: 35px;
+        font-family: Architects Daughter;
+        padding: 0 10px;
+        outline: none;
+        border: none;
+        margin-bottom: 12px;
+      }
+      textarea {
+        height: 56px;
+        resize: none;
+      }
+      #submitBtn {
+        width: 116px;
+        height: 29px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+#ContactContent2 {
+  width: $content;
+  height: auto;
+  @include display();
+  padding-bottom: 272px;
+  padding-top: 61px;
+  .ContactCart {
+    width: 235px;
+    height: 260px;
+    border: 1px solid #ed2c3d;
+    @include display(start, center, column);
+    padding-top: 61px;
+    h1 {
+      font-family: Black Han Sans;
+      font-size: 24px;
+      font-weight: 400;
+      margin: 19px 0;
+    }
+    input {
+      width: 115px;
+      height: 25px;
+      border: 1px solid #ed2c3d;
+      background: #fff;
+      margin-bottom: 19px;
+    }
+  }
+}
+
+// Single Category Page
+
+.singleTitleSection {
+  margin-top: 59px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  img {
+    width: 462px;
+    height: 526px;
+    border-radius: 60px;
+  }
+  div {
+    width: 736px;
+    height: auto;
+    margin-left: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    h1 {
+      color: #ed2c3d;
+      font-family: Black Han Sans;
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    p {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+}
+.singleImgSection {
+  width: 1258px;
+  height: 195px;
+  margin: 71px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 292px;
+    height: 195px;
+  }
+}
+.singleInfoSection {
+  width: 1258px;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  p {
+    width: auto;
+    height: auto;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  img {
+    width: 422px;
+    height: 343px;
+  }
+}
+.singlePhotoSection {
+  width: 1258px;
+  height: auto;
+  padding: 71px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 513px;
+    height: 357px;
+    border-radius: 50px;
+  }
+}
