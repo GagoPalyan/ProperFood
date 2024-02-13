@@ -18,7 +18,7 @@ header {
   @include display;
   #ProperFood {
     width: 423px;
-    height: 89px;
+    height: auto;
     img {
       width: 100%;
       height: 100%;
@@ -120,11 +120,12 @@ footer {
   background: url("../Images/brooke-lark-08bOYnH_r_E-unsplash\ 2.png") left
       center no-repeat,
     linear-gradient(
-      180deg,
-      rgba(236, 244, 246, 1) 0%,
-      rgba(231, 239, 241, 1) 100%
-    );
-  background-size: contain;
+        180deg,
+        rgba(236, 244, 246, 1) 0%,
+        rgba(231, 239, 241, 1) 100%
+      )
+      right center no-repeat;
+  background-size: cover;
   @include display(center, start);
   padding-top: 27px;
   .content {
@@ -382,81 +383,6 @@ footer {
   }
 }
 
-#ContactContent1 {
-  width: 100%;
-  height: 450px;
-  @include display(center);
-  padding-top: 42px;
-  div {
-    width: 604px;
-    height: 420px;
-    flex-shrink: 0;
-    background: #ed2c3d;
-    @include display(center, center, column);
-    h1 {
-      color: #fff;
-      text-align: center;
-      font-family: Architects Daughter;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-    form {
-      width: 245px;
-      height: auto;
-      @include display(space-between, center, column);
-      input,
-      textarea {
-        width: 100%;
-        height: 35px;
-        font-family: Architects Daughter;
-        padding: 0 10px;
-        outline: none;
-        border: none;
-        margin-bottom: 12px;
-      }
-      textarea {
-        height: 56px;
-        resize: none;
-      }
-      #submitBtn {
-        width: 116px;
-        height: 29px;
-        font-size: 18px;
-      }
-    }
-  }
-}
-
-#ContactContent2 {
-  width: $content;
-  height: auto;
-  @include display();
-  padding-bottom: 272px;
-  padding-top: 61px;
-  .ContactCart {
-    width: 235px;
-    height: 260px;
-    border: 1px solid #ed2c3d;
-    @include display(start, center, column);
-    padding-top: 61px;
-    h1 {
-      font-family: Black Han Sans;
-      font-size: 24px;
-      font-weight: 400;
-      margin: 19px 0;
-    }
-    input {
-      width: 115px;
-      height: 25px;
-      border: 1px solid #ed2c3d;
-      background: #fff;
-      margin-bottom: 19px;
-    }
-  }
-}
-
 // Single Category Page
 
 .singleTitleSection {
@@ -539,5 +465,82 @@ footer {
     width: 513px;
     height: 357px;
     border-radius: 50px;
+  }
+}
+
+// Contact Page
+
+#ContactContent1 {
+  width: 100%;
+  height: 450px;
+  @include display(center);
+  padding-top: 42px;
+  div {
+    width: 604px;
+    height: 420px;
+    flex-shrink: 0;
+    background: #ed2c3d;
+    @include display(center, center, column);
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-family: Architects Daughter;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    form {
+      width: 245px;
+      height: auto;
+      @include display(space-between, center, column);
+      input,
+      textarea {
+        width: 100%;
+        height: 35px;
+        font-family: Architects Daughter;
+        padding: 0 10px;
+        outline: none;
+        border: none;
+        margin-bottom: 12px;
+      }
+      textarea {
+        height: 56px;
+        resize: none;
+      }
+      #submitBtn {
+        width: 116px;
+        height: 29px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+#ContactContent2 {
+  width: $content;
+  height: auto;
+  @include display();
+  padding-bottom: 272px;
+  padding-top: 61px;
+  .ContactCart {
+    width: 235px;
+    height: 260px;
+    border: 1px solid #ed2c3d;
+    @include display(start, center, column);
+    padding-top: 61px;
+    h1 {
+      font-family: Black Han Sans;
+      font-size: 24px;
+      font-weight: 400;
+      margin: 19px 0;
+    }
+    input {
+      width: 115px;
+      height: 25px;
+      border: 1px solid #ed2c3d;
+      background: #fff;
+      margin-bottom: 19px;
+    }
   }
 }

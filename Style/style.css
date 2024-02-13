@@ -7,6 +7,419 @@ a {
   --content: 1215px;
 }
 
+@media screen and (max-width: 1280px) {
+  body {
+    --desktop: 100%;
+    --content: 950px;
+  }
+  body header {
+    height: 70px;
+  }
+  body header #ProperFood {
+    width: 250px;
+  }
+  body header p {
+    font-size: 14px;
+  }
+  body header #Search {
+    margin-left: 200px;
+  }
+  body footer .footerLogo {
+    width: var(--content);
+  }
+  body footer .footerNav {
+    width: var(--content);
+  }
+  body footer .footerNav .footerPages {
+    width: 550px;
+  }
+  body .pagePosition {
+    height: 60px;
+  }
+  body #pageInfo {
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 27px;
+  }
+  body #pageInfo .content {
+    width: var(--content);
+  }
+  body #pageInfo .content h2 {
+    height: auto;
+    font-size: 18px;
+  }
+  body #pageInfo .content #myEmail {
+    width: 370px;
+    height: 40px;
+  }
+  body #pageInfo .content #myEmail input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  body #HomeContent1 {
+    width: var(--content);
+    height: auto;
+    padding: 30px 0;
+  }
+  body #HomeContent1 .HelloText {
+    width: 600px;
+  }
+  body #HomeContent1 .HelloText h1 {
+    color: #ed2c3d;
+    font-family: Black Han Sans;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  body #HomeContent1 .HelloText p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  body #HomeContent2 {
+    width: var(--content);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  body #HomeContent2 .whyLeft {
+    padding-left: 0;
+  }
+  body #HomeContent3 {
+    width: var(--content);
+  }
+  body #HomeContent3 .contentLeft .infoCart {
+    margin-bottom: 30px;
+    width: 492px;
+    height: auto;
+  }
+  body #HomeContent3 .contentLeft .infoCart img {
+    width: 100%;
+    height: auto;
+  }
+  body #HomeContent3 .contentLeft .infoCart h3 {
+    font-size: 18px;
+  }
+  body #HomeContent3 .contentLeft .infoCart p {
+    font-size: 12px;
+  }
+  body #HomeContent3 .contentRight .tags {
+    display: none;
+  }
+  body .postsCart {
+    width: 257px;
+    margin-bottom: 15px;
+  }
+  body .postsCart p {
+    font-size: 14px;
+    text-align: center;
+  }
+  body .postsCart h6 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  body #CategoryContent1 {
+    display: none;
+  }
+  body #CategoryContent2 {
+    width: var(--content);
+    margin-top: 20px;
+  }
+  body #CategoryContent2 h1 {
+    font-size: 28px;
+  }
+  body #CategoryContent2 .categorys {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  body #CategoryContent2 .categorys .categoryCart {
+    width: 370px;
+    height: 354px;
+  }
+  body #CategoryContent2 .categorys .categoryCart img {
+    width: 100%;
+    height: auto;
+  }
+  body #CategoryContent2 .categorys .categoryCart h3 {
+    width: 100%;
+    font-size: 18px;
+  }
+  body .singleTitleSection {
+    width: var(--content);
+  }
+  body .singleTitleSection img {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+  }
+  body .singleTitleSection div {
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+  }
+  body .singleTitleSection div h1 {
+    font-size: 28px;
+  }
+  body .singleTitleSection div p {
+    font-size: 18px;
+  }
+  body .singleImgSection {
+    width: var(--content);
+    height: auto;
+  }
+  body .singleImgSection img {
+    width: 200px;
+    height: 135px;
+    border-radius: 10px;
+  }
+  body .singleInfoSection {
+    width: var(--content);
+  }
+  body .singleInfoSection p {
+    font-size: 20px;
+  }
+  body .singleInfoSection img {
+    width: 250px;
+    height: 250px;
+  }
+  body .singlePhotoSection {
+    width: var(--content);
+  }
+  body .singlePhotoSection img {
+    width: 350px;
+    height: 225px;
+  }
+}
+@media screen and (max-width: 980px) {
+  body {
+    --content: 550px;
+  }
+  body header {
+    width: 100%;
+  }
+  body header #ProperFood {
+    height: auto;
+  }
+  body header #ProperFood img {
+    width: 100%;
+    height: 100%;
+  }
+  body header p {
+    display: none;
+  }
+  body header #email {
+    display: none;
+  }
+  body footer {
+    width: 100%;
+  }
+  body footer .footerLogo {
+    width: 100%;
+  }
+  body footer .footerNav {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body footer .footerNav .footerPages {
+    width: 550px;
+    height: auto;
+  }
+  body .pagePosition {
+    width: 90%;
+    height: 60px;
+  }
+  body #pageInfo .content {
+    width: 90%;
+  }
+  body #pageInfo .content h2 {
+    width: 450px;
+    height: auto;
+    font-size: 16px;
+  }
+  body #HomeContent1 {
+    width: var(--content);
+    height: auto;
+    padding: 30px 0;
+  }
+  body #HomeContent1 .HelloText {
+    width: 600px;
+  }
+  body #HomeContent1 .HelloText h1 {
+    color: #ed2c3d;
+    font-family: Black Han Sans;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  body #HomeContent1 .HelloText p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  body #HomeContent1 .HelloImg {
+    display: none;
+  }
+  body #HomeContent2 {
+    width: var(--content);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  body #HomeContent2 .whyLeft {
+    padding-left: 0;
+  }
+  body #HomeContent2 .whyRight {
+    display: none;
+  }
+  body #HomeContent3 {
+    width: var(--content);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  body #HomeContent3 .contentLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  body #HomeContent3 .contentLeft .infoCart {
+    margin-bottom: 30px;
+    width: 492px;
+    height: auto;
+  }
+  body #HomeContent3 .contentLeft .infoCart img {
+    width: 100%;
+    height: auto;
+  }
+  body #HomeContent3 .contentLeft .infoCart h3 {
+    font-size: 18px;
+  }
+  body #HomeContent3 .contentLeft .infoCart p {
+    font-size: 12px;
+  }
+  body #HomeContent3 .contentRight {
+    display: none;
+  }
+  body .postsCart {
+    display: none;
+  }
+  body #CategoryContent2 .categorys {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  body .singleTitleSection {
+    width: var(--content);
+  }
+  body .singleTitleSection img {
+    display: none;
+  }
+  body .singleTitleSection div {
+    margin: 0;
+  }
+  body .singleImgSection {
+    width: var(--content);
+  }
+  body .singleImgSection img {
+    width: 125px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  body .singleInfoSection img {
+    display: none;
+  }
+  body .singlePhotoSection img {
+    width: 230px;
+    height: 150px;
+    border-radius: 15px;
+  }
+  body #ContactContent1 {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 42px;
+  }
+  body #ContactContent1 div {
+    width: 604px;
+    height: 420px;
+    flex-shrink: 0;
+    background: #ed2c3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  body #ContactContent1 div h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Architects Daughter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  body #ContactContent1 div form {
+    width: 245px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  body #ContactContent1 div form input,
+  body #ContactContent1 div form textarea {
+    width: 100%;
+    height: 35px;
+    font-family: Architects Daughter;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 12px;
+  }
+  body #ContactContent1 div form textarea {
+    height: 56px;
+    resize: none;
+  }
+  body #ContactContent1 div form #submitBtn {
+    width: 116px;
+    height: 29px;
+    font-size: 18px;
+  }
+  body #ContactContent2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  body #ContactContent2 .ContactCart {
+    margin-bottom: 10px;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -39,7 +452,7 @@ header {
 }
 header #ProperFood {
   width: 423px;
-  height: 89px;
+  height: auto;
 }
 header #ProperFood img {
   width: 100%;
@@ -161,8 +574,8 @@ footer .footerNav .footerSocials {
 #pageInfo {
   width: 100%;
   height: 647px;
-  background: url("../Images/brooke-lark-08bOYnH_r_E-unsplash 2.png") left center no-repeat, linear-gradient(180deg, rgb(236, 244, 246) 0%, rgb(231, 239, 241) 100%);
-  background-size: contain;
+  background: url("../Images/brooke-lark-08bOYnH_r_E-unsplash 2.png") left center no-repeat, linear-gradient(180deg, rgb(236, 244, 246) 0%, rgb(231, 239, 241) 100%) right center no-repeat;
+  background-size: cover;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -498,6 +911,92 @@ footer .footerNav .footerSocials {
   font-weight: 400;
 }
 
+.singleTitleSection {
+  margin-top: 59px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.singleTitleSection img {
+  width: 462px;
+  height: 526px;
+  border-radius: 60px;
+}
+.singleTitleSection div {
+  width: 736px;
+  height: auto;
+  margin-left: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.singleTitleSection div h1 {
+  color: #ed2c3d;
+  font-family: Black Han Sans;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.singleTitleSection div p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.singleImgSection {
+  width: 1258px;
+  height: 195px;
+  margin: 71px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.singleImgSection img {
+  width: 292px;
+  height: 195px;
+}
+
+.singleInfoSection {
+  width: 1258px;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.singleInfoSection p {
+  width: auto;
+  height: auto;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.singleInfoSection img {
+  width: 422px;
+  height: 343px;
+}
+
+.singlePhotoSection {
+  width: 1258px;
+  height: auto;
+  padding: 71px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.singlePhotoSection img {
+  width: 513px;
+  height: 357px;
+  border-radius: 50px;
+}
+
 #ContactContent1 {
   width: 100%;
   height: 450px;
@@ -591,90 +1090,4 @@ footer .footerNav .footerSocials {
   border: 1px solid #ed2c3d;
   background: #fff;
   margin-bottom: 19px;
-}
-
-.singleTitleSection {
-  margin-top: 59px;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-}
-.singleTitleSection img {
-  width: 462px;
-  height: 526px;
-  border-radius: 60px;
-}
-.singleTitleSection div {
-  width: 736px;
-  height: auto;
-  margin-left: 72px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-}
-.singleTitleSection div h1 {
-  color: #ed2c3d;
-  font-family: Black Han Sans;
-  font-size: 37px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.singleTitleSection div p {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.singleImgSection {
-  width: 1258px;
-  height: 195px;
-  margin: 71px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.singleImgSection img {
-  width: 292px;
-  height: 195px;
-}
-
-.singleInfoSection {
-  width: 1258px;
-  height: auto;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-}
-.singleInfoSection p {
-  width: auto;
-  height: auto;
-  color: #000;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.singleInfoSection img {
-  width: 422px;
-  height: 343px;
-}
-
-.singlePhotoSection {
-  width: 1258px;
-  height: auto;
-  padding: 71px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.singlePhotoSection img {
-  width: 513px;
-  height: 357px;
-  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
